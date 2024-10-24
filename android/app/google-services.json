@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "565444894744",
+    "project_id": "pasta-watford-420",
+    "storage_bucket": "pasta-watford-420.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:565444894744:android:2b5439f3967b8c25c9236d",
+        "android_client_info": {
+          "package_name": "com.mateuszbeczkowski.pasta_watford"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCRzf_ynvUxIogQ2sBhTE2U_N9muF4KC2I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
