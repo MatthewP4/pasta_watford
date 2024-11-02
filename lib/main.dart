@@ -21,8 +21,10 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-        useMaterial3: true,
+        colorScheme: ColorScheme.fromSeed(
+          seedColor: const Color.fromARGB(255, 54, 244, 89),
+        ),
+        useMaterial3: false,
       ),
       home: const RootPage(),
     );
@@ -37,13 +39,14 @@ class RootPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return StreamBuilder<User?>(
-        stream: FirebaseAuth.instance.authStateChanges(),
-        builder: (context, snapshot) {
-          final user = snapshot.data;
-          if (user == null) {
-            return const LoginPage();
-          }
-          return HomePage(user: user);
-        });
+      stream: FirebaseAuth.instance.authStateChanges(),
+      builder: (context, snapshot) {
+        final user = snapshot.data;
+        if (user == null) {
+          return LoginPage();
+        }
+        return HomePage(user: user);
+      },
+    );
   }
 }
